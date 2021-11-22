@@ -331,5 +331,32 @@
             </select>
             <button type="submit">Let me in!</button>
         </form>
+        <h3>Survey form</h3>
+        <form action="">
+            <p>Dobro se snalazim u HTML-u. (1 - u potpunosti se ne slažem, 5 - u potpunosti se slažem)</p>
+            <!-- input stavimo u label , klik na broj oznaci radio button-->
+            <!-- mogli smo label dodat sa for kao prije-->
+            <label><input type="radio" name="answer" value="1"> 1</label>
+            <label><input type="radio" name="answer" value="2"> 2</label>
+            <!-- checked odmah odabrana vrijednost-->
+            <label><input type="radio" name="answer"  value="3"checked> 3</label>
+            <label><input type="radio" name="answer" value="4"> 4</label>
+            <label><input type="radio" name="answer" value="5"> 5</label>
+        </form>
+        <h3>Newsletter form</h3>
+        <form action="" autocomplete="off">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email"  required>
+            <p>Pick your newsletter topics</p>
+            <label><input type="checkbox" name="newsletter_sport">Sport</label>
+            <br>
+            <label><input type="checkbox" name="newsletter_pets">Pets</label>
+            <br>
+            <label><input type="checkbox" name="newsletter_fashion">Fashion</label>
+            <br>
+            <label><input type="checkbox" name="newsletter_health">Health</label>
+            <br>
+            <button type="submit">Sign me up</button>
+        </form>
     </body>
 </html>
