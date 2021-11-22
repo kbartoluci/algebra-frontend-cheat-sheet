@@ -346,15 +346,16 @@
         <h3>Newsletter form</h3>
         <form action="" autocomplete="off">
             <label for="email">Email:</label>
-            <input id="email" type="email" name="email"  required>
-            <p>Pick your newsletter topics</p>
-            <label><input type="checkbox" name="newsletter_sport">Sport</label>
+            <input id="email" type="email" name="email" required>
+
+            <p>Pick your newsletter topics:</p>
+            <label><input type="checkbox" name="newsletter_topic" value="Sport"> Sport</label>
             <br>
-            <label><input type="checkbox" name="newsletter_pets">Pets</label>
+            <label><input type="checkbox" name="newsletter_topic" value="Pets"> Pets</label>
             <br>
-            <label><input type="checkbox" name="newsletter_fashion">Fashion</label>
+            <label><input type="checkbox" name="newsletter_topic" value="Fashion"> Fashion</label>
             <br>
-            <label><input type="checkbox" name="newsletter_health">Health</label>
+            <label><input type="checkbox" name="newsletter_topic" value="Health"> Health</label>
             <br>
             <button type="submit">Sign me up</button>
         </form>
