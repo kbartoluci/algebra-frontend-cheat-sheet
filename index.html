@@ -359,5 +359,40 @@
             <br>
             <button type="submit">Sign me up</button>
         </form>
+        <h3>Forms</h3>
+        <form action="">
+            <input list="food-recommendations-list" type="text">
+            <button>Submit order</button>
+            <datalist id="food-recommendations-list">
+                <option value="Hamburger">100% mljevena junetina, salata, rajčica</option>
+                <option>Wrap</option>
+                <option>Čokolino</option>
+                <option>Pizza</option>
+                <option>Zagrebački odrezak</option>
+            </datalist>
+        </form>
+        <h3>Food order form</h3>
+        <form action="">
+            <label>Full name:* <input type="text" name="full_name" required></label><br><br>
+            <label>Phone:* <input type="text" name="phone" required></label><br><br>
+            <label>Address:* <input type="text" name="address" required></label><br><br>
+            <label>Delivery time:* <input type="time" name="delivery_time" required></label><br><br>
+            <label>Order:* <input list="food-list" type="text" required></label><br><br>
+            <datalist id="food-list">
+                <option value="Hamburger">100% mljevena junetina, salata, rajčica</option>
+                <option value="Zagrebački odrezak">piletina, sir, šunka</option>
+            </datalist>
+            <p>Pick your side dish:</p>
+            <label><input type="checkbox" name="order_extras" value="Sport"> Ketchup</label><br>
+            <label><input type="checkbox" name="order_extras" value="Mustard"> Mustard</label><br>
+            <label><input type="checkbox" name="order_extras" value="Mayonnaise"> Mayonnaise</label><br>
+            <label><input type="checkbox" name="order_extras" value="Potato"> Potato</label><br>
+            <label><input type="checkbox" name="order_extras" value="Salad"> Salad</label><br>
+            <p>Contactless delivery: </p>
+            <label><input type="radio" name="contactless_delivery" value="true">Da</label>
+             <label><input type="radio" name="contactless_delivery" value="false">Ne</label><br><br>
+            <label>Comment <textarea type="textarea" name="comment" maxlength="250"></textarea></label><br><br>
+            <button type="submit">Submit order!</button>
+        </form>
     </body>
 </html>
